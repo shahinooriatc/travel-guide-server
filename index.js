@@ -27,11 +27,14 @@ client.connect(err => {
     const reviews = client.db("travelGuide").collection("reviews");
     const admins = client.db("travelGuide").collection("admins");
 
+    console.log(' Database connection Successful');
+
     app.post('/addService', (req, res) => {
         const file = req.files.file;
         const name = req.body.name;
         const price = req.body.price;
         const description = req.body.description;
+        console.log(description);
 
         const newImg = file.data;
         const encImg = newImg.toString('base64');

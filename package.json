@@ -1,5 +1,5 @@
 {
-  "name": "travel-guru-server",
+  "name": "travel-guide-server",
   "version": "1.0.0",
   "description": "Travel agency website",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "start-dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Naimur Rahman",
+  "author": "Shahinoor",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
