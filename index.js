@@ -13,8 +13,13 @@ const port = 5000;
 
 const MongoClient = require('mongodb').MongoClient;
 const ObjectID = require('mongodb').ObjectID;
-const uri = process.env.DB_URI;
+// const uri = process.env.DB_URI;
+// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+const uri = "mongodb+srv://travelguide:travelguide123@cluster0.kv4hu.mongodb.net/travelguide?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
+
+
 
 client.connect(err => {
     const services = client.db("travelGuide").collection("services");
